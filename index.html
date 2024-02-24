@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Monoton and Hind Siliguri font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Monoton&display=swap" rel="stylesheet">    
+<title>Twi Name Auto-Generator</title>
+</head>
+<body>
+    <div id="overlay">
+        <h1 class="title-font">Twi Name</h1>
+        <!-- <p class="no-margin-top">auto-generator</p> -->
+        <form>
+            <div class="block input-button-container">
+                <label for="date-of-birth" class="hidden">Enter your date of birth</label>
+                <!-- dob stands for Date Of Birth -->
+                <input id="dob" type="date" name="dob" aria-label="date-of-birth" required>
+            </div>
+            <div class="block">
+                <div class="input-button-container">
+                    <input id="woman" type="radio" aria-label="gender-woman" name="gender" value="woman" required>
+                    <label for="woman">Woman</label>
+                </div>
+                <div class="input-button-container">
+                    <input id="man" type="radio" aria-label="gender-man" name="gender" value="man">
+                    <label for="man">Man</label>
+                </div>
+            </div>
+            <button type="submit">Find my name</button>
+        </form>
+        <div id="horizontal-line" class="hidden"></div>
+        <p id="output" class="hidden">Output goes here</p>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
