@@ -1,4 +1,4 @@
-# Twi-name-autogenerator
+# Ghana-name-autogenerator
 
 ## Inspo
 
